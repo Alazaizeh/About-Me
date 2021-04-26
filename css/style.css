@@ -1,20 +1,13 @@
 h1{
     font-size: 100px;
     font-weight: bold;
-    color: red;
+    color: gold;
+    text-shadow: black 0px 0px 5px;
     padding: 75px;
     margin: 75px;
 }
 p{
-    display: inline-block;
     font-size: 50px;
     font-weight: bold;
     margin-left: 50px;
-}
-image{
-    display: inline-block;
-}
-body{
-
-
 }
