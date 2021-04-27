@@ -129,7 +129,7 @@ for (let i = 1; i <= 4; i++) {
     break;
   }
   attempts++;
-  if (isNaN(myAge)) {
+  if (isNaN(myAge) || myAge == "") {
     alert(`Enter a Valid number ! ${4 - attempts} attempts left`);
   } else if (myAge > 23) {
     alert(`Your guess is too high ! ${4 - attempts} attempts left`);
