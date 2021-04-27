@@ -167,7 +167,7 @@ for (let i = 1; i <= 6; i++) {
 }
 if (attempts >= 6) {
   // console.log("Wrong");
-  alert(`WRONG Answer !! The Correct Ccountries: \n${countries.join("\n")}`);
+  alert(`WRONG Answer !! The Correct Ccountries: \n${countries}`);
 }
 
 alert(
