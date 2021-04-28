@@ -11,6 +11,7 @@ while (userName == null || userName == "") {
 console.log(userName);
 alert(`Welcome ${userName} to my site ^_^ `);
 
+function askCoffee(){
 let coffee = null;
 questionCounter++;
 while (coffee != "Y" && coffee != "N" && coffee != "YES" && coffee != "NO") {
@@ -27,7 +28,8 @@ if (coffee == "Y" || coffee == "YES") {
   // console.log("Wrong");
   alert(`WRONG Answer !!`);
 }
-
+}
+function askFootball(){
 let football = null;
 questionCounter++;
 while (
@@ -50,7 +52,8 @@ if (football == "N" || football == "NO") {
   // console.log("Wrong");
   alert(`WRONG Answer !!`);
 }
-
+}
+function askMovie(){
 let movie = null;
 questionCounter++;
 while (movie != "Y" && movie != "N" && movie != "YES" && movie != "NO") {
@@ -70,7 +73,8 @@ if (movie == "Y" || movie == "YES") {
   // console.log("Wrong");
   alert(`WRONG Answer !! `);
 }
-
+}
+function askDegree(){
 let degree = null;
 questionCounter++;
 while (degree != "Y" && degree != "N" && degree != "YES" && degree != "NO") {
@@ -88,7 +92,8 @@ if (degree == "N" || degree == "NO") {
   // console.log("Wrong");
   alert(`WRONG Answer !! `);
 }
-
+}
+function askWeather(){
 let weather = null;
 questionCounter++;
 while (
@@ -113,7 +118,8 @@ if (weather == "N" || weather == "NO") {
   // console.log("Wrong");
   alert(`WRONG Answer !!`);
 }
-
+}
+function askAge(){
 let myAge = null;
 questionCounter++;
 for (let i = 1; i <= 4; i++) {
@@ -137,12 +143,14 @@ for (let i = 1; i <= 4; i++) {
     alert(`Your guess is too low ! ${4 - attempts} attempts left`);
   }
 }
+
 if (attempts >= 4) {
   // console.log("Wrong");
   alert(`WRONG Answer !! The Correct Number is 23`);
 }
 attempts = 0;
-
+}
+function askCountry (){
 let countries = ["MEXICO", "EGYPT", "IRELAND", "CANADA", "CHINA"];
 let country = null;
 questionCounter++;
@@ -169,6 +177,15 @@ if (attempts >= 6) {
   // console.log("Wrong");
   alert(`WRONG Answer !! The Correct Ccountries: \n${countries}`);
 }
+}
+askCoffee();
+askFootball();
+askMovie();
+askDegree();
+askWeather();
+askAge();
+askCountry();
+
 
 alert(
   `Well Played ${userName}, Your overall Score ${score} out of ${questionCounter}`
