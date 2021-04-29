@@ -8,7 +8,6 @@ let userName = null;
 while (userName == null || userName == "") {
   userName = prompt("Hello Please Enter Your Name ?");
 }
-console.log(userName);
 alert(
   `Welcome ${userName} to my site would you like to play a guessing game ? `
 );
@@ -24,11 +23,9 @@ function askCoffee() {
     }
   }
   if (coffee == "Y" || coffee == "YES") {
-    // console.log("Correct");
     score++;
     alert(`Great, Correct Answer `);
   } else if (coffee == "N" || coffee == "NO") {
-    // console.log("Wrong");
     alert(`Wrong Answer !!`);
   }
 }
@@ -47,12 +44,9 @@ function askFootball() {
     }
   }
   if (football == "N" || football == "NO") {
-    // console.log("Correct");
-
     score++;
     alert(`Great, Correct Answer `);
   } else if (football == "Y" || football == "YES") {
-    // console.log("Wrong");
     alert(`Wrong Answer !!`);
   }
 }
@@ -68,12 +62,9 @@ function askMovie() {
     }
   }
   if (movie == "Y" || movie == "YES") {
-    // console.log("Correct");
-
     score++;
     alert(`Great, Correct Answer `);
   } else if (movie == "N" || movie == "NO") {
-    // console.log("Wrong");
     alert(`Wrong Answer !! `);
   }
 }
@@ -87,12 +78,9 @@ function askDegree() {
     }
   }
   if (degree == "N" || degree == "NO") {
-    // console.log("Correct");
-
     score++;
     alert(`Great, Correct Answer `);
   } else if (degree == "Y" || degree == "YES") {
-    // console.log("Wrong");
     alert(`Wrong Answer !! `);
   }
 }
@@ -113,12 +101,9 @@ function askWeather() {
     }
   }
   if (weather == "N" || weather == "NO") {
-    // console.log("Correct");
-
     score++;
     alert(`Great, Correct Answer`);
   } else if (weather == "Y" || weather == "YES") {
-    // console.log("Wrong");
     alert(`Wrong Answer !!`);
   }
 }
@@ -132,7 +117,6 @@ function askAge() {
     console.log(typeof myAge);
     console.log(myAge);
     if (myAge == 23) {
-      // console.log("Correct");
       alert(`Great, Correct Answer`);
       score++;
       break;
@@ -148,7 +132,6 @@ function askAge() {
   }
 
   if (attempts >= 4) {
-    // console.log("Wrong");
     alert(`Wrong Answer !! The Correct Number is 23`);
   }
   attempts = 0;
@@ -166,18 +149,15 @@ function askCountry() {
       country = country.toUpperCase();
     }
     if (countries.indexOf(country) != -1) {
-      // console.log("Correct");
       score++;
       alert(`Great, Correct Answer `);
       break;
     } else {
       attempts++;
-      // console.log("Wrong");
       alert(`Wrong Answer !! ${6 - attempts} attempts left`);
     }
   }
   if (attempts >= 6) {
-    // console.log("Wrong");
     alert(`Wrong Answer !! The Correct Ccountries: \n${countries}`);
   }
 }
