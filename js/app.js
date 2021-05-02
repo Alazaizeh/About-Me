@@ -114,8 +114,7 @@ function askAge() {
     myAge = Number(
       prompt(`Q${questionCounter}: Can you guess my age ? Enter a number  ?`)
     );
-    console.log(typeof myAge);
-    console.log(myAge);
+
     if (myAge == 23) {
       alert(`Great, Correct Answer`);
       score++;
